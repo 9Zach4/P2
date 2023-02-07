@@ -1,0 +1,246 @@
+*{
+  font-family: 'Raleway', sans-serif;
+}
+
+header{
+  height: 100%;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin-left: 44px;
+  margin-top: 55px;
+}
+
+.booki {
+  width: 61.09px;
+  height: 19px;
+  }
+
+.menu {
+  display: flex;
+  justify-content: space-around; 
+  align-items: flex-end;
+  background: rgb(253, 253, 253);
+  width: 381px;
+  height: 19px;
+  left: 982px;
+  top: 48px;
+}
+form {
+  width: 50%; 
+  text-align: left;
+  background-color: rgb(253, 253, 253);
+  display: flex;
+  align-items: center;
+}
+input[type="text"] {
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 1px solid #F2F2F2
+}
+input[type="submit"] {
+  position: relative;
+  left: -22px;
+  width: 100px;
+  height: 43px;
+  background-color: #0065FC;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 0px 15px 15px 0px;;
+  cursor: pointer;
+}
+.icone{
+  width: 50px;
+  height: 44px;
+  left: 1000px;
+  top: 48px;
+  background: #F2F2F2;
+  border-radius: 15px 0px 0px 15px;
+}
+i.fa-solid.fa-location-dot {
+  position: relative;
+  left: 15px;
+  top: 10px;
+  height: 18px;
+  width: 14px;
+  border-radius: 0px;
+  color: black;
+  font-size: 20px;
+}
+.filtre{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 914px;
+  height: 50px;
+  left: 62px;
+  top: 280px;
+  padding: 20px;
+}
+.Economique{
+  width: 175px;
+  height: 48px;
+  left: 148px;
+  top: 280px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.Familial{
+  width: 136px;
+  height: 48px;
+  left: 366px;
+  top: 280px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.Romantique{
+  width: 172px;
+  height: 48px;
+  left: 542px;
+  top: 280px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px
+}
+.Animaux.Autorisés{
+  width: 226px;
+  height: 50px;
+  left: 750px;
+  top: 280px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px
+}
+.fa-sharp.fa-solid.fa-money-bill-1-wave{
+  color: #0065FC ;
+  font-size: 20px;
+}
+.fa-sharp.fa-solid.fa-person{
+  color: #0065FC ;
+  font-size: 20px;
+}
+.fa-sharp.fa-solid.fa-heart{
+  color: #0065FC ;
+  font-size: 20px;
+}
+.fa-sharp.fa-solid.fa-dog{
+  color: #0065FC ;
+  font-size: 20px;
+}
+.info{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 447px;
+  margin-left: 11px;
+  margin-bottom: 30px;
+}
+
+
+.cercle{
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid #D9D9D9;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-sharp.fa-solid.fa-info{
+  color: #0065FC;
+  width: 6px;
+  height: 17px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #747171;
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 20px;
+  width: 880px;
+  height: 626px;
+}
+main
+{
+  width: 100%;
+display : flex;
+flex-direction: row;
+}
+.card {
+  border: 1px solid #020202;
+  border-radius: 20px;
+  background-color: #ffffff;
+  width: 246px;
+  height: 199px;
+  padding-top: 3px;
+  padding-left: 3px;
+  padding-right: 3 px;
+  padding-right: 3px;
+}
+
+.photo{
+border-radius: 20px 20px 0px 0px;
+height: 124px;
+width: 246px;
+}
+.container {
+  width: 204px;
+  height:39px;
+}
+.infocard{
+  margin: 1px;
+  margin-left: 10px;
+}
+.fa-solid.fa-star:nth-child(7n+7) {
+  color: #F2F2F2;
+}
+.Marseille{
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 200px 200px;
+  row-gap: 28px;
+}
+aside{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 420px;
+  height: 666px;
+  background-color: red;
+  border-radius: 20px;
+  margin-left: 40px;
+}
+
+
