@@ -9,9 +9,8 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 102px;
-  max-width: 1440px;
+  width: 1377px;
 }
-
 
 body {
  margin: 0px;
@@ -27,9 +26,8 @@ body {
   justify-content: space-between;
   align-items: flex-end;
   background: rgb(253, 253, 253);
-  width: 304px;
+  width: 267px;
   height: 19px;
-  padding: 0 50px;
   flex-direction: row;
 }
 .accomodation {
@@ -239,8 +237,7 @@ main{
   flex-direction: row;
   flex-wrap: wrap;
   margin: auto;
-  padding: 0 2rem;
-  max-width: 1440px;
+  width: 1377px;
 }
 .card {
   border-radius: 20px;
@@ -288,7 +285,6 @@ aside{
   row-gap: 35px;
   padding: 30px;
   margin-bottom: 38px;
-  padding-bottom: 44px;
 }
 
 .section-top{
@@ -360,14 +356,15 @@ aside{
 }
 .bottomsection{
   display: grid;
-  grid-template-columns: 320px 320px 320px 319px;
-  gap: 35px;
+  grid-template-columns: 330px 330px 330px 308px;
+  gap: 26px;
   background-color: rgb(255, 255, 255);
-  margin-top: 10px;
+  margin-bottom: 55px;
 }
+
 .bigbox{
   height: 495px;
-  width: 319px;
+  width: 310px;
   border-radius: 20px;
   box-shadow: 1px 1px 8px rgb(0 0 0 / 20%);
 
@@ -383,8 +380,9 @@ aside{
   border-radius: 0px 0px 20px 20px;
   
 }
-.bottomtitle {
-  margin-bottom: 26px;
+.bottom {
+  margin-block: 18px;
+  background-color: white;
 
 }
 footer{
@@ -396,6 +394,7 @@ footer{
   background-color: #F2F2F2;
   margin: 0px 0px;
 }
+
 
 
 @media only screen and (max-width: 768px){
