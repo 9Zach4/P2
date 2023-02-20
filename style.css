@@ -35,15 +35,15 @@ header .menu ul li a {
 }
 
 header .menu ul li a:hover {
-    transition: border 1.3s, color 0.5s;
-    border-top: solid 2px #0065FC;
+    transition: border 0.3s, color 0.1s;
+    border-top: solid 4px #0065FC;
     color: #0065FC;
 }
-
 
 main {
     margin: 0 40px 50px;
 }
+
 
 #section-top h1 {
     font-size: 22px;
@@ -53,6 +53,8 @@ main {
 #section-top p {
     font-size: 16px;
 }
+
+
 
 #section-top form {
     margin: 30px 0;
@@ -168,11 +170,14 @@ main {
 }
 
 
+
 #accomodation {
     display: flex;
     margin: 50px 0 0 0;
     justify-content: space-between;
 }
+
+
 
 #accomodation .marseille {
     background: #F2F2F2;
@@ -189,12 +194,13 @@ main {
     font-size: 22px;
 }
 
-
-#accomodation .marseille .cardsblock article:hover {
-    transform: scale(1.015);
-    transition: 0.3s;
+#accomodation .marseille .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-#accomodation .marseille .cardsblock article {
+
+#accomodation .marseille .container article {
     margin: 1rem 0;
     padding: 5px;
     width: 31%;
@@ -203,65 +209,59 @@ main {
     background: white;
     transition: 0.3s;
 }
-#accomodation .marseille .cardsblock {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+
+#accomodation .marseille .container article:hover {
+    transform: scale(1.015);
+    transition: 0.3s;
 }
 
-
-#accomodation .marseille .cardsblock article .roomCards {
+#accomodation .marseille .container article .roomcards {
+    text-decoration: none;
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
     border-radius: 20px;
     color: #000000;
-    text-decoration: none;
 }
 
-#accomodation .marseille .cardsblock article .roomCard .insidecard img {
+#accomodation .marseille .container article .roomcards .photo img {
     width: 100%;
     height: 124px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
 
-#accomodation .marseille .cardsblock article .roomCards .description h3 {
+#accomodation .marseille .container article .roomcards .block-content h3 {
     font-size: 16px;
     margin: 5px;
 }
 
-#accomodation .marseille .cardsblock article .roomCards .description .roomprice {
+#accomodation .marseille .container article .roomcards .block-content .price {
     font-size: 14px;
     margin: 0 5px 5px 5px;
 }
 
-#accomodation .marseille .cardsblock article .roomCards .description .rating {
+#accomodation .marseille .container article .roomcards .block-content .star-rating {
     margin: 5px;
 }
 
-#accomodation .marseille .cardsblock article .roomCards .description .rating i {
+#accomodation .marseille .container article .roomcards .block-content .star-rating i {
     color: #0065FC;
     transition: 1s all;
 }
 
-#accomodation .marseille .cardsblock article .roomCards .description .rating i:hover~i {
-    color: #0065fc54;
-    transition: 0.2s all;
-}
-
-#accomodation .marseille .cardsblock article .roomCards .description .rating i:hover~.grey {
+#accomodation .marseille .container article .roomcards .block-content .star-rating i:hover~.grey {
     color: #F2F2F2;
     transition: 0.2s all;
 }
 
-#accomodation .marseille .cardsblock article .roomCards .description .rating .grey {
+#accomodation .marseille .container article .roomcards .block-content .star-rating .grey {
     color: #F2F2F2;
     transition: 0.3s all;
 }
 
-#accomodation .marseille .cardsblock article .roomCards .description .rating .grey:hover {
+#accomodation .marseille .container article .roomcards .block-content .star-rating .grey:hover {
     color: #0065FC;
     transition: 0.2s all;
 }
@@ -281,8 +281,8 @@ main {
     border-radius: 20px;
     padding: 40px;
     display: flex;
-    width: 33%;
     flex-direction: column;
+    width: 33%;
 }
 
 #accomodation .popular h2 {
@@ -296,12 +296,12 @@ main {
     color: #0065FC;
 }
 
-#accomodation .popular .cardsblock {
+#accomodation .popular .container {
     display: flex;
     flex-direction: column;
 }
 
-#accomodation .popular .cardsblock article {
+#accomodation .popular .container article {
     background: white;
     margin: 1rem 0;
     padding: 5px;
@@ -312,12 +312,12 @@ main {
     transition: 0.3s;
 }
 
-#accomodation .popular .cardsblock article:hover {
+#accomodation .popular .container article:hover {
     transform: scale(1.015);
     transition: 0.3s;
 }
 
-#accomodation .popular .cardsblock article .popularCards {
+#accomodation .popular .container article .popularCards {
     display: flex;
     text-decoration: none;
     border-radius: 20px;
@@ -326,91 +326,88 @@ main {
     width: 100%;
 }
 
-#accomodation .popular .cardsblock article .popularCards .insidecard {
+#accomodation .popular .container article .popularCards .photo {
     width: 40%;
 }
 
-#accomodation .popular .cardsblock article .popularCards .insidecard img {
+#accomodation .popular .container article .popularCards .photo img {
     width: 100%;
     height: 100%;
     border-radius: 20px 0 0 20px;
     object-fit: cover;
 }
 
-#accomodation .popular .cardsblock article .popularCards .description {
+#accomodation .popular .container article .popularCards .block-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 60%;
 }
 
-#accomodation .popular .cardsblock article .popularCards .description h3 {
+#accomodation .popular .container article .popularCards .block-content h3 {
     font-size: 16px;
     margin: 5px;
 }
 
-#accomodation .popular .cardsblock article .popularCards .description p {
+#accomodation .popular .container article .popularCards .block-content p {
     font-size: 14px;
     margin: 0 5px 5px 5px;
 }
 
-#accomodation .popular .cardsblock article .popularCards .description .rating {
+#accomodation .popular .container article .popularCards .block-content .star-rating {
     margin: 5px;
     display: flex;
     padding: 5px 0;
 }
 
-#accomodation .popular .cardsblock article .popularCards .description .rating i {
+#accomodation .popular .container article .popularCards .block-content .star-rating i {
     color: #0065FC;
     transition: 1s all;
 }
 
-#accomodation .popular .cardsblock article .popularCards .description .rating i:hover~i {
-    color: #0065fc54;
-    transition: 0.2s all;
-}
 
-#accomodation .popular .cardsblock article .popularCards .description .rating i:hover~.grey {
+
+#accomodation .popular .container article .popularCards .block-content .star-rating i:hover~.grey {
     color: #F2F2F2;
-    transition: 0.2s all;
+    transition: 0.4s all;
 }
 
-#accomodation .popular .cardsblock article .popularCards .description .rating .grey {
+#accomodation .popular .container article .popularCards .block-content .star-rating .grey {
     color: #F2F2F2;
 }
 
-#accomodation .popular .cardsblock article .popularCards .description .rating .grey:hover {
+#accomodation .popular .container article .popularCards .block-content .star-rating .grey:hover {
     color: #0065FC;
-    transition: 0.2s all;
+    transition: 0.3s all;
 }
 
 
-#activityblock h2 {
+#activities h2 {
     margin: 0 0 30px 0;
     padding-top: 50px;
     font-size: 22px;
 }
 
-#activityblock .activity {
+#activities .activity {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-#activityblock .activity article {
+#activities .activity article {
     width: 22.5%;
     height: 445px;
     border-radius: 20px;
-    box-shadow: #8f87876b 0 0 15px;
-    transition: 0.3s;
+    box-shadow: gray 0 0 3px;
+    transition: 0.6s;
 }
 
-#activityblock .activity article:hover {
+#activities .activity article:hover {
     transform: scale(1.015);
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
-#activityblock .activity article .bigbox {
+#activities .activity article .activity-block {
     display: flex;
     flex-direction: column;
     text-decoration: none;
@@ -419,25 +416,25 @@ main {
     height: 100%;
 }
 
-#activityblock .activity article .bigbox .insidecard {
+#activities .activity article .activity-block .photo {
     height: 389px;
     width: 100%;
 }
 
-#activityblock .activity article .bigbox .insidecard img {
+#activities .activity article .activity-block .photo img {
     width: 100%;
     height: 100%;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
 
-#activityblock .activity article .bigbox .description {
+#activities .activity article .activity-block .block-content {
     height: 56px;
     display: flex;
     align-items: center;
 }
 
-#activityblock .activity article .bigbox .description h3 {
+#activities .activity article .activity-block .block-content h3 {
     font-size: 16px;
     padding: 0 15px;
 }
@@ -448,28 +445,28 @@ footer {
     margin: 50px 40px 0;
 }
 
-footer .downpage {
+footer .downPage {
     display: flex;
     justify-content: space-around;
     padding: 20px 50px;
     width: 100%;
 }
 
-footer .downpage div {
+footer .downPage div {
     width: 33%;
 }
 
-footer .downpage div p {
+footer .downPage div p {
     font-weight: bold;
     padding: 15px 0;
     font-size: 18px;
 }
 
-footer .downpage ul {
+footer .downPage ul {
     list-style: none;
 }
 
-footer .downpage ul li a {
+footer .downPage ul li a {
     text-decoration: none;
     color: #000000;
     margin: 0 0 10px 0;
@@ -477,4 +474,236 @@ footer .downpage ul li a {
     font-size: 16px;
 }
 
+@media screen and (max-width: 991px) {
 
+    #section-top nav{
+        align-items: baseline;
+    }
+
+    #accomodation {
+        flex-direction: column;
+    }
+
+    #accomodation .marseille {
+        width: 100%;
+    }
+
+    #accomodation .popular {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    #accomodation .popular .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #accomodation .popular .container article {
+        width: 31%;
+        height: auto;
+    }
+
+  
+    #activities .activity article {
+        height: 267px;
+    }
+
+    #activities .activity article .activity-block .photo {
+        height: 211px;
+    }
+
+}
+
+
+@media screen and (max-width: 767px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .logo a img {
+        margin: 25px 0 20px;
+    }
+
+    header .menu {
+        width: 100%;
+    }
+
+    header .menu ul {
+        width: 100%;
+        justify-content: space-between;
+    }
+    header .menu ul li {
+        text-align: center;
+        width: 100%;
+    }
+    header .menu ul li a {
+        border-top: none;
+        border-bottom: solid 3px #F2F2F2;
+        padding: 25px;
+    }
+    header .menu ul li a:hover {
+        border-top: none;
+        border-bottom: solid 5px #0065FC;
+    }
+
+    main {
+        margin: 0;
+    }
+
+
+
+    #section-top {
+        margin: 30px 12px;
+    }
+
+    #section-top p {
+        margin: 10px 0 0;
+    }
+
+    #section-top form label,
+    .submit {
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #section-top form #localisation {
+        width: 100%;
+    }
+
+    #section-top form .submit i {
+        display: block;
+        color: #ffffff;
+    }
+
+    #section-top form .submit span {
+        display: none;
+    }
+
+    #section-top nav {
+        flex-direction: column;
+        align-items: stretch;
+        margin-bottom: 30px;
+    }
+
+    #section-top nav ul {
+        margin: 0;
+        justify-content: space-between;
+    }
+
+    #section-top nav ul li {
+        width: 47.5%;
+        margin: 9px 0;
+    }
+
+    #section-top nav ul li a {
+        font-size: 12px;
+        padding: 1rem 0;
+        justify-content: flex-start;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #section-top nav ul li a i {
+        font-size: 20px;
+        margin-left: 3px;
+    }
+
+    #section-top nav+p {
+        align-items: baseline;
+    }
+
+    #section-top nav+p span i {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    #accomodation {
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+
+    #accomodation .popular {
+        margin: 0;
+        border-radius: 0;
+        padding: 25px 12px;
+        height: 580px;
+    }
+
+    #accomodation .popular .container {
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 10px 0 0;
+        height: 87%;
+    }
+
+    #accomodation .popular .container article {
+        width: 100%;
+        height: 144px;
+        margin: 0;
+    }
+
+    #accomodation .popular .container article .popularCards .block-content {
+        margin: 10px 10px 0;
+    }
+
+    #accomodation .marseille {
+        background: none;
+        padding: 25px 12px 20px;
+        height: auto;
+    }
+
+    #accomodation .marseille .container article {
+        width: 100%;
+    }
+
+    #accomodation .marseille .container article .roomcards .block-content {
+        margin: 0 5px;
+    }
+
+    #accomodation .marseille .show-more {
+        display: none;
+    }
+
+    #activities {
+        padding: 0 12px;
+    }
+
+    #activities h2 {
+        margin: 0;
+        width: 110px;
+    }
+
+    #activities .activity {
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+    #activities .activity article {
+        width: 100%;
+        height: 190px;
+        margin-bottom: 30px;
+    }
+
+    #activities .activity article .activity-block .photo {
+        height: 134px;
+    }
+
+    footer {
+        background: #F2F2F2;
+        margin: 45px 0 0;
+    }
+
+    footer .downPage {
+        flex-direction: column;
+        padding: 9px 10px;
+    }
+
+    footer .downPage div {
+        width: 100%;
+        padding: 10px 0;
+    }
+}
