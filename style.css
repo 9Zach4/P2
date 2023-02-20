@@ -54,8 +54,6 @@ main {
     font-size: 16px;
 }
 
-
-
 #section-top form {
     margin: 30px 0;
     display: flex;
@@ -169,15 +167,11 @@ main {
     border-radius: 24px;
 }
 
-
-
 #accomodation {
     display: flex;
     margin: 50px 0 0 0;
     justify-content: space-between;
 }
-
-
 
 #accomodation .marseille {
     background: #F2F2F2;
@@ -207,12 +201,12 @@ main {
     border-radius: 20px;
     box-shadow: #8f87876b 0 0 15px;
     background: white;
-    transition: 0.3s;
+    transition: 0.1s;
 }
 
 #accomodation .marseille .container article:hover {
     transform: scale(1.015);
-    transition: 0.3s;
+    transition: 0.1s;
 }
 
 #accomodation .marseille .container article .roomcards {
