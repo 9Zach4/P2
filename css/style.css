@@ -18,6 +18,7 @@ header {
 header .logo a img {
     width: 61px;
     margin: 50px;
+    margin-left: 40px;
 }
 
 header .menu ul {
@@ -201,12 +202,12 @@ main {
     border-radius: 20px;
     box-shadow: #8f87876b 0 0 15px;
     background: white;
-    transition: 0.1s;
+    transition: 0.3s;
 }
 
 #accomodation .marseille .container article:hover {
-    transform: scale(1.015);
-    transition: 0.1s;
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 #accomodation .marseille .container article .roomcards {
@@ -307,7 +308,7 @@ main {
 }
 
 #accomodation .popular .container article:hover {
-    transform: scale(1.015);
+    transform: scale(1.1);
     transition: 0.3s;
 }
 
@@ -359,11 +360,9 @@ main {
     transition: 1s all;
 }
 
-
-
 #accomodation .popular .container article .popularCards .block-content .star-rating i:hover~.grey {
     color: #F2F2F2;
-    transition: 0.4s all;
+    transition: 0.2s all;
 }
 
 #accomodation .popular .container article .popularCards .block-content .star-rating .grey {
@@ -372,7 +371,7 @@ main {
 
 #accomodation .popular .container article .popularCards .block-content .star-rating .grey:hover {
     color: #0065FC;
-    transition: 0.3s all;
+    transition: 0.2s all;
 }
 
 
@@ -393,12 +392,12 @@ main {
     height: 445px;
     border-radius: 20px;
     box-shadow: gray 0 0 3px;
-    transition: 0.6s;
+    transition: 0.3s;
 }
 
 #activities .activity article:hover {
     transform: scale(1.015);
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 #activities .activity article .activity-block {
