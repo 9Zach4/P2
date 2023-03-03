@@ -336,7 +336,8 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 60%;
+    width: 47%;
+    margin-left: 15px;
 }
 
 #accomodation .popular .container article .popularCards .block-content h3 {
