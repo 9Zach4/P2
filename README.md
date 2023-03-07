@@ -8,7 +8,7 @@ Deuxième projet du parcours developpeur web chez `OpenClassrooms`. L'objectif e
 *  Les utilisateurs pourront rechercher des chambre d'hotel dans la ville de leur choix. Le champ de recherche est un champ de saisie. La partie recherche ne doit pas être fonctionnelle.  
 * Chaque carte d’hébergement ou d’activité devra être *cliquable* dans son intégralité. Pour l’instant, les liens sont vides. On peut utiliser un attribut `href=”#”`pour simuler la présence d’un lien.  
 * Les __filtres__ doivent changer d’apparence au __survol__, cenpendant, ils ne doivent pas être __fonctionnels__.  
-* *“Hébergements”* et “Activités”, situés dans l’en-tête, sont des `liens`. Ils doivent mener respectivement vers la section __“Hébergements à Marseille”__ et __"Activités à Marseille”__.  
+* *“Hébergements”* et *“Activités”*, situés dans l’en-tête, sont des `liens`. Ils doivent mener respectivement vers la section __“Hébergements à Marseille”__ et __"Activités à Marseille”__.  
 # Spécifications techniques
 * Le site doit être __responsive__ afin d'être adapté aux formats tablette et téléohone.  
 * L'intégration doit d'abord débuter par le format Desktop.  
