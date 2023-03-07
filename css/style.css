@@ -245,11 +245,6 @@ main {
     color: #0065FC;
 }
 
-#accomodation .marseille .container article .roomcards .block-content .star-rating i:hover~.grey {
-    color: #F2F2F2;
-    transition: 0.2s all;
-}
-
 #accomodation .marseille .container article .roomcards .block-content .star-rating .grey {
     color: #F2F2F2;
     transition: 0.3s all;
@@ -389,7 +384,7 @@ main {
 }
 
 #activities .activity article:hover {
-    transform: scale(1.015);
+    transform: scale(1.1);
     transition: 0.3s;
 }
 
